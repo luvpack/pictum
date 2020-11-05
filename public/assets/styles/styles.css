@@ -1,0 +1,374 @@
+html {
+    font-family: Inter, "SF Display", "Helvetica Neue", 'TT Commons', --apple-system, sans-serif;;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 0.9em;
+    transition: .5s;
+    user-select: none;
+}
+
+div:nth-last-child(1) {
+    margin-right: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    height: fit-content;
+}
+
+a::after {
+    transition: .4s;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    transition: .2s;
+    color: darkgrey;
+}
+
+a.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a.logo:hover {
+    color: black;
+}
+
+button, a.button {
+    padding: 10px 40px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    outline: none;
+    border: none;
+    margin: 0 4px;
+}
+
+button, a.button {
+    background-color: black;
+    transition: .4s;
+}
+
+button:hover, a.button:hover {
+    background-color: #2a2a2a;
+    transition: .2s;
+}
+
+a.button.tab {
+    width: fit-content;
+    background-color: rgba(0,0,0,.0);
+    color: black;
+    margin: 0 4px;
+}
+
+a.button.secondary, a.button.tab.active {
+    color: black;
+    background-color: rgba(0,0,0,.05);
+}
+
+a.button.secondary:hover, a.button.tab:hover {
+    background-color: rgba(0,0,0,.09);
+}
+
+a.button.rounded {
+    line-height: 1.2;
+    padding: 10px;
+    border-radius: 1000px;
+}
+
+.dropdown {
+    border-radius: 15px;
+    background: white;
+    position: absolute;
+    right: 11vw;
+    top: 12vh;
+    list-style: none;
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(117, 117, 117, 0.2);
+    -moz-box-shadow: 0px 5px 16px 0px rgba(117, 117, 117, 0.2);
+    box-shadow: 0px 5px 16px 0px rgba(117, 117, 117, 0.2);
+    z-index: 9999;
+}
+
+div.dropdown > div > a:nth-child(1) {
+    border-radius: 15px 15px 0 0;
+}
+
+div.dropdown > div > a:nth-last-child(1) {
+    border-radius: 0 0 15px 15px;
+}
+
+div.dropdown > div > a {
+    display: list-item;
+    cursor: pointer;
+    text-align: left;
+    padding: 15px 50px 15px 19px;
+    border-radius: 0;
+}
+
+div.dropdown > div > a:hover {
+    color: black;
+    transition: .2s;
+    background-color: whitesmoke;
+}
+
+div.dropdown > div > div > a:hover {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-block: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+ul.h {
+    display: flex;
+    align-items: center;
+}
+
+ul.h > li {
+    display: inline-block;
+}
+
+ul.nav > li {
+    margin: 0 1.2vw;
+    font-weight: 500;
+}
+
+ul.h > li:nth-last-child(1) {
+    margin-right: 0 !important;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2% 10%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+input {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: rgba(0,0,0,.05);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 613px) {
+    .cta__signup {
+        display: none !important;
+    }
+}
+
+body {
+    display: unset;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-gap: 5vh;
+    grid-template-columns: 100%;
+}
+
+section.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subtitle {
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-size: 0.9em;
+}
+
+*.text-center {
+    text-align: center;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 900;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    border-radius: 30px;
+}
+
+form > * {
+    margin-bottom: 15px;
+}
+
+section.popular, section.top-collection {
+    width: 100%;
+    height: 100%;
+    background-position-y: center;
+    height: 450px;
+    font-size: 1.2em;
+}
+
+section.image-card, div.image-card {
+    display: flex;
+    border-radius: 30px;
+    transition: .2s;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+    height: content-box;
+    height: 240px;
+    background-size: cover;
+    font-size: 0.9em;
+}
+
+section.popular.image-card > div.about {
+    padding: 3rem;
+}
+
+section.image-card > div.about, div.image-card > div.about {
+    align-self: flex-end;
+    padding: 2rem;
+    width: 100%;
+}
+
+.cards-list {
+
+}
+
+*.image-card:hover {
+    transform: scale(0.96, 0.96);
+    transition: .3s;
+}
+
+h2 {
+    font-size: 2em;
+    font-width: 800;
+    margin-bottom: 5px;
+}
+
+.cards-list {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.cards-list:nth-child(0) {
+    grid-row-start: 1;
+}
+
+.cards-list.primary {
+    grid-auto-flow: column;
+    grid-template-rows: 100%;
+    grid-auto-columns: 25%;
+}
+
+.cards-list.secondary {
+    grid-auto-flow: column;
+    grid-template-rows: 100%;
+    grid-auto-columns: 33%;
+}
+
+.cards-list.collection {
+    grid-auto-flow: dense;
+    grid-template-columns: auto auto auto auto;
+}
+
+.avatar div {
+    background-color: lightgrey;
+    width: 36px;
+    height: 36px;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+.avatar.big > div {
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.tabs-stack {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+section.profile__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-container {
+    width: 320px;
+    align-self: center;
+    padding: 10vh;
+}

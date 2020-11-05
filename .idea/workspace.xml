@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b73b967c-77c3-412b-9b86-0d2d7d2ec329" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jlQk0Va3PgfWCJeGsf23LWLP2v" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/interface" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/../devilbox/data/www/pictum/public/assets" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b73b967c-77c3-412b-9b86-0d2d7d2ec329" name="Default Changelist" comment="" />
+      <created>1604376337704</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604376337704</updated>
+      <workItem from="1604376339249" duration="9780000" />
+      <workItem from="1604410554523" duration="178000" />
+      <workItem from="1604410784971" duration="209000" />
+      <workItem from="1604411047130" duration="54304000" />
+      <workItem from="1604549468037" duration="1485000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1016" y="97" key="#Inspections" timestamp="1604521617730">
+      <screen x="-1280" y="23" width="1280" height="777" />
+    </state>
+    <state x="-1016" y="97" key="#Inspections/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604521617730" />
+    <state x="-1258" y="248" key="#SQL_Dialects" timestamp="1604521381054">
+      <screen x="-1280" y="23" width="1280" height="777" />
+    </state>
+    <state x="-1258" y="248" key="#SQL_Dialects/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604521381054" />
+    <state x="-1201" y="262" key="#SQL_Resolution_Scopes" timestamp="1604521537493">
+      <screen x="-1280" y="23" width="1280" height="777" />
+    </state>
+    <state x="-1201" y="262" key="#SQL_Resolution_Scopes/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604521537493" />
+    <state x="-1050" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604521494973">
+      <screen x="-1280" y="23" width="1280" height="777" />
+    </state>
+    <state x="-1050" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604521494973" />
+    <state width="832" height="198" key="GridCell.Tab.0.bottom" timestamp="1604524026245">
+      <screen x="-1280" y="23" width="1280" height="777" />
+    </state>
+    <state width="832" height="198" key="GridCell.Tab.0.bottom/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604524026245" />
+    <state width="832" height="198" key="GridCell.Tab.0.center" timestamp="1604524026244">
+      <screen x="-1280" y="23" width="1280" height="777" />
+    </state>
+    <state width="832" height="198" key="GridCell.Tab.0.center/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604524026244" />
+    <state width="832" height="198" key="GridCell.Tab.0.left" timestamp="1604524026243">
+      <screen x="-1280" y="23" width="1280" height="777" />
+    </state>
+    <state width="832" height="198" key="GridCell.Tab.0.left/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604524026243" />
+    <state width="832" height="198" key="GridCell.Tab.0.right" timestamp="1604524026245">
+      <screen x="-1280" y="23" width="1280" height="777" />
+    </state>
+    <state width="832" height="198" key="GridCell.Tab.0.right/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604524026245" />
+    <state x="-937" y="144" key="NewPhpClassDialog" timestamp="1604514645022">
+      <screen x="-1280" y="23" width="1280" height="777" />
+    </state>
+    <state x="-937" y="144" key="NewPhpClassDialog/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604514645022" />
+    <state x="-829" y="314" key="NewPhpFileDialog" timestamp="1604532628880">
+      <screen x="-1280" y="23" width="1280" height="710" />
+    </state>
+    <state x="-829" y="342" key="NewPhpFileDialog/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604516204847" />
+    <state x="-829" y="314" key="NewPhpFileDialog/0.23.1366.745/-1280.23.1280.710@-1280.23.1280.710" timestamp="1604532628880" />
+    <state x="-1115" y="23" key="SettingsEditor" timestamp="1604376976069">
+      <screen x="-1280" y="23" width="1280" height="777" />
+    </state>
+    <state x="-1115" y="23" key="SettingsEditor/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604376976069" />
+    <state width="394" height="441" key="SqlResolveConfigurable" timestamp="1604521536434">
+      <screen x="-1280" y="23" width="1280" height="777" />
+    </state>
+    <state width="394" height="441" key="SqlResolveConfigurable/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604521536434" />
+    <state x="-985" y="115" width="670" height="618" key="search.everywhere.popup" timestamp="1604532469177">
+      <screen x="-1280" y="23" width="1280" height="710" />
+    </state>
+    <state x="-985" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604505190946" />
+    <state x="-985" y="115" width="670" height="618" key="search.everywhere.popup/0.23.1366.745/-1280.23.1280.710@-1280.23.1280.710" timestamp="1604532469177" />
+  </component>
+</project>
