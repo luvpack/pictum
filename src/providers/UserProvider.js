@@ -29,6 +29,18 @@ class UserProvider {
         return user
     }
 
+    photos = async () => {
+        const photos = await fetch.get('/user/photos.php')
+
+        return photos;
+    }
+
+    collections = async () => {
+        const collections = await fetch.get('/user/collections.php')
+
+        return collections;
+    }
+
     logout = async () => {
         const response = await fetch.get('/user/logout.php')
 

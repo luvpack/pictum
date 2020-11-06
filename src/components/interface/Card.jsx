@@ -9,7 +9,9 @@ const Card = (props) => {
             <div className='image-card' style={{backgroundImage: `url('${props.imageUrl}')`}}>
                 <div className='about'>
                     <h2>{props.title}</h2>
-                    <div className='subtitle'>by {`${props.author}`}</div>
+                    {
+                        props.author ? <div className='subtitle'>by {`${props.author}`}</div> : null
+                    }
                 </div>
             </div>
         </Link>

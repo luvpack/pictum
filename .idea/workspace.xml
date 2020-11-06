@@ -16,8 +16,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b73b967c-77c3-412b-9b86-0d2d7d2ec329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/api/user/collections.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/api/user/photos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/api/v2/collections/get.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/api/v2/photos/get.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/config/databasev2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/utils/redbean/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/utils/redbean/rb-mysql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/pictum.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/pictum.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/objects/collections.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/objects/collections.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interface/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/interface/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interface/Tabs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/interface/Tabs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/SessionPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/SessionPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/UserProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/UserProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/fetch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +73,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/interface" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/../devilbox/data/www/pictum/public/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/utils/redbean" />
+      <recent name="$PROJECT_DIR$/src/components/interface" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -78,6 +97,9 @@
       <workItem from="1604410784971" duration="209000" />
       <workItem from="1604411047130" duration="54304000" />
       <workItem from="1604549468037" duration="1485000" />
+      <workItem from="1604688480645" duration="2683000" />
+      <workItem from="1604692998207" duration="12000" />
+      <workItem from="1604694911616" duration="5305000" />
     </task>
     <servers />
   </component>
@@ -94,6 +116,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1016" y="97" key="#Inspections" timestamp="1604521617730">
@@ -132,10 +155,12 @@
       <screen x="-1280" y="23" width="1280" height="777" />
     </state>
     <state x="-937" y="144" key="NewPhpClassDialog/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604514645022" />
-    <state x="-829" y="314" key="NewPhpFileDialog" timestamp="1604532628880">
-      <screen x="-1280" y="23" width="1280" height="710" />
+    <state x="-829" y="328" key="NewPhpFileDialog" timestamp="1604699176547">
+      <screen x="-1280" y="0" width="1280" height="800" />
     </state>
+    <state x="-829" y="328" key="NewPhpFileDialog/0.23.1366.678/-1280.0.1280.800@-1280.0.1280.800" timestamp="1604699176547" />
     <state x="-829" y="342" key="NewPhpFileDialog/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604516204847" />
+    <state x="481" y="301" key="NewPhpFileDialog/0.23.1366.678/-1280.23.1280.777@0.23.1366.678" timestamp="1604691872861" />
     <state x="-829" y="314" key="NewPhpFileDialog/0.23.1366.745/-1280.23.1280.710@-1280.23.1280.710" timestamp="1604532628880" />
     <state x="-1115" y="23" key="SettingsEditor" timestamp="1604376976069">
       <screen x="-1280" y="23" width="1280" height="777" />
@@ -145,9 +170,10 @@
       <screen x="-1280" y="23" width="1280" height="777" />
     </state>
     <state width="394" height="441" key="SqlResolveConfigurable/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604521536434" />
-    <state x="-985" y="115" width="670" height="618" key="search.everywhere.popup" timestamp="1604532469177">
-      <screen x="-1280" y="23" width="1280" height="710" />
+    <state x="-985" y="104" width="670" height="697" key="search.everywhere.popup" timestamp="1604697437965">
+      <screen x="-1280" y="0" width="1280" height="800" />
     </state>
+    <state x="-985" y="104" width="670" height="697" key="search.everywhere.popup/0.23.1366.678/-1280.0.1280.800@-1280.0.1280.800" timestamp="1604697437965" />
     <state x="-985" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1366.678/-1280.23.1280.777@-1280.23.1280.777" timestamp="1604505190946" />
     <state x="-985" y="115" width="670" height="618" key="search.everywhere.popup/0.23.1366.745/-1280.23.1280.710@-1280.23.1280.710" timestamp="1604532469177" />
   </component>

@@ -1,5 +1,6 @@
 <?php
     error_reporting(0);
+
     class Collections {
         private $connection;
 
@@ -43,6 +44,31 @@
             }
 
             return ['status' => true, 'collections' => $collections_array, 'count' => $collections->num_rows];
+        }
+
+        public function photos($params)
+        {
+            $t = [['uploader_id' => '1']];
+
+            $where_string = '';
+
+            if ($params) {
+                $where_string = 'WHERE ';
+
+                $index = 0;
+                foreach ($params as $param) {
+                    $key = array_key_first($param);
+                    $where_string = $where_string.' '.$key.'='.$param[$key];
+
+                    if ($index = count($params) - 1) {
+                        $where_string = $where_string.' and';
+                    }
+
+                    $index++;
+                }
+            }
+
+            print $where_string;
         }
 
         public function getPhotos ($collection_id, string $limit='100', string $offset='0')

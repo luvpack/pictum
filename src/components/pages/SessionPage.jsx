@@ -43,7 +43,7 @@ class SessionPage extends React.Component {
                             service
                         </div>
                     </div>
-                    <Tabs selected={this.state.currentTab} tabs={[{title: 'Sign In', to: '/session/signin'}, {title: 'Sign Up', to: '/session/signup'}]} />
+                    <Tabs style={{marginBottom: '40px'}} selected={this.state.currentTab} tabs={[{title: 'Sign In', to: '/session/signin'}, {title: 'Sign Up', to: '/session/signup'}]} />
                     {
                         this.state.currentTab === 0 ? <SignInForm /> : <SignUpForm/>
                     }

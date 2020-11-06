@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 class Tabs extends React.Component {
     render() {
         return (
-            <div className="tabs" style={{marginBottom: '40px'}}>
+            <div className="tabs" style={this.props.style ? {...this.props.style} : {}}>
                 {
                     this.props.tabs.map((item, index) => {
                         return (

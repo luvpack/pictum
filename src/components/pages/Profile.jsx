@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {withRouter} from 'react-router-dom'
 
 import {UserContext} from "../lib/userContext";
@@ -8,16 +8,61 @@ import CardSection from "../interface/CardSection.jsx";
 import Card from "../interface/Card.jsx";
 import Avatar from "../interface/Avatar.jsx";
 import Tabs from "../interface/Tabs.jsx";
+import UserProvider from "../../providers/UserProvider";
 
 function Photos(props) {
+    const [loading, setLoading] = useState(true);
+    const [photos, setPhotos] = useState([]);
+    const userProvider = new UserProvider();
+
+    useEffect(() => {
+        userProvider.photos().then((res) => {
+            const photos = res.data;
+
+            setLoading(false)
+            setPhotos(photos);
+        })
+            .catch((err) => {
+                console.error(err)
+            })
+    }, [])
+
+    if (loading) return <a>Loading...</a>
+
     return (
         <CardSection type='collection'>
-            <Card title='Architecture' author='Eugene Mandelstam' href='#' imageUrl='https://images.unsplash.com/photo-1604062459109-fe36dde64999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80'/>
-            <Card title='Architecture' author='Eugene Mandelstam' href='#' imageUrl='https://images.unsplash.com/photo-1604062459109-fe36dde64999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80'/>
-            <Card title='Architecture' author='Eugene Mandelstam' href='#' imageUrl='https://images.unsplash.com/photo-1604062459109-fe36dde64999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80'/>
-            <Card title='Architecture' author='Eugene Mandelstam' href='#' imageUrl='https://images.unsplash.com/photo-1604062459109-fe36dde64999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80'/>
-            <Card title='Architecture' author='Eugene Mandelstam' href='#' imageUrl='https://images.unsplash.com/photo-1604062459109-fe36dde64999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80'/>
-            <Card title='Architecture' author='Eugene Mandelstam' href='#' imageUrl='https://images.unsplash.com/photo-1604062459109-fe36dde64999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80'/>
+            { photos.map((photo) => {
+                return <Card key={photo.id} title={photo.title || ''} href={'#'} imageUrl={photo.url}></Card>
+            }) }
+        </CardSection>
+    )
+}
+
+
+function Collections(props) {
+    const [loading, setLoading] = useState(true);
+    const [collections, setCollections] = useState([]);
+    const userProvider = new UserProvider();
+
+    useEffect(() => {
+        userProvider.collections().then((res) => {
+            const collections = res.data;
+
+            setLoading(false)
+            setCollections(collections);
+        })
+            .catch((err) => {
+                console.error(err)
+            })
+    }, [])
+
+    if (loading) return <a>Loading...</a>
+
+    return (
+        <CardSection type='collection'>
+            { collections.map((collection) => {
+                return <Card key={collection.id} author={collection.author_name} title={collection.title || ''} href={'#'} imageUrl={collection.photo_url}></Card>
+            }) }
         </CardSection>
     )
 }
@@ -55,7 +100,7 @@ class Profile extends React.Component {
 
     tabs = [
         <Photos></Photos>,
-        <Photos></Photos>,
+        <Collections></Collections>,
         <Photos></Photos>,
     ]
 
@@ -67,7 +112,8 @@ class Profile extends React.Component {
                 <section className="profile__info">
                     <Avatar src={user.avatar_url} type='big'></Avatar>
                     <h1>{`${user.firstName} ${user.lastName}`}</h1>
-                    <div style={{marginBottom: '25px'}} className="subtitle">100 FOLLOWERS</div>
+                    { // <div style={{marginBottom: '25px'}} className="subtitle">100 FOLLOWERS</div>
+                        }
                     <Tabs selected={this.state.currentTab || 0} tabs={[{title: 'Photos', to: '/profile/photos'}, {title: 'Collections', to: '/profile/collections'}, {title: 'Favorites', to: '/profile/favorites'}]}></Tabs>
                 </section>
                 {
